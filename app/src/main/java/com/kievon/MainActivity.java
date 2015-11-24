@@ -54,7 +54,7 @@ public class MainActivity extends FragmentActivity
             }
             @Override
             public void onError(VKError error) {
-// Произошла ошибка авторизации (например, пользователь запретил авторизацию)
+// Произошла ошибка авторизации (например, пользователь запретил авторизацию и тд)
                 Toast.makeText(getApplicationContext(),"Error", Toast.LENGTH_LONG).show();
             }
         })) {
