@@ -9,14 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-import com.google.android.gms.location.places.Places;
 
 
 public class MainActivity extends FragmentActivity
@@ -40,23 +38,11 @@ public class MainActivity extends FragmentActivity
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
                 .build();
 
-
-
-
-       /* mGoogleApiClient = new GoogleApiClient
-                .Builder(this)
-                .addApi(Places.GEO_DATA_API)
-                .addApi(Places.PLACE_DETECTION_API)
-                .addConnectionCallbacks(this)
-                .addOnConnectionFailedListener(this)
-                .build();*/
-
-
-
     }
 
 
 
+    //
     @Override
     public void onClick(View v) {
         Log.d("123", "Text");
