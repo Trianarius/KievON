@@ -60,6 +60,8 @@ public class MainActivity extends FragmentActivity
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             //Log.d("true", String.valueOf(result.isSuccess()));
             Log.d("ololo", String.valueOf(result.getSignInAccount()));
+            MapActivity r = new MapActivity();
+            r.onPlaceLikelihood(getCurrentFocus());
         }
 
     }
