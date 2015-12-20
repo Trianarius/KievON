@@ -42,7 +42,6 @@ public class MainActivity extends FragmentActivity
 
 
 
-    //
     @Override
     public void onClick(View v) {
         Log.d("123", "Text");
