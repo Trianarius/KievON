@@ -17,6 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Autorization"
+            android:label="Autorization">
+
+              </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCuW9gNqiDG_qLdqXU_4BGDNL00j9AUkII"/>

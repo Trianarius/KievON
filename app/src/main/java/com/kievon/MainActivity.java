@@ -9,18 +9,16 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.google.android.gms.auth.api.Auth;
-import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
 import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-import com.google.android.gms.location.places.Places;
 
 
 public class MainActivity extends FragmentActivity
-        implements ConnectionCallbacks, OnConnectionFailedListener, View.OnClickListener {
+           {
 
     private GoogleApiClient mGoogleApiClient;
 
@@ -30,15 +28,18 @@ public class MainActivity extends FragmentActivity
         setContentView(R.layout.activity_main);
 
 
-        findViewById(R.id.sign_in_button).setOnClickListener(this);
+
+
+      /*  findViewById(R.id.sign_in_button).setOnClickListener(this);
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
 
         mGoogleApiClient = new GoogleApiClient.Builder(this)
-                .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
-                .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
-                .build();
+                .enableAutoManage(this /* FragmentActivity *//*, this /* OnConnectionFailedListener *//*)*/
+               /* .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
+                /*.build();/*
+
 
 
 
@@ -56,12 +57,21 @@ public class MainActivity extends FragmentActivity
     }
 
 
+    public void Click(View view){
+        Intent intent = new Intent(MainActivity.this,Autorization.class);
+        startActivity(intent);
 
-    @Override
+
+
+    }
+   /* @Override
     public void onClick(View v) {
         Log.d("123", "Text");
         Intent signinIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signinIntent, 1);
+
+
+
 
 
     }
@@ -126,5 +136,5 @@ public class MainActivity extends FragmentActivity
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
-    }
+    }*/
 }
