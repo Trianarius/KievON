@@ -37,7 +37,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
   SupportMapFragment mapFregment;
   GoogleMap map;
   final String TAG = "myLogs";
-
+         
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
