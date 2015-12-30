@@ -3,4 +3,10 @@
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="sign_out">Signed out</string>
+    <string name="disconnect_button">Disconnect</string>
+    <string name="Test">Sattelite</string>
+    <string name="Test2">Classic</string>
+    <string name="Test3">Authorization</string>
 </resources>
